@@ -1,0 +1,49 @@
+# Don't track system folders
+rootfs/bin/
+rootfs/sbin/
+rootfs/lib/
+rootfs/lib64/
+rootfs/usr/
+rootfs/dev/
+rootfs/proc/
+rootfs/sys/
+rootfs/tmp/
+rootfs/var/
+rootfs/run/
+rootfs/mnt/
+rootfs/media/
+rootfs/boot/
+rootfs/home/
+# Exclude entire rootfs tree to avoid Git errors on Windows
+rootfs/**
+
+
+# Ignore initramfs or other generated archives
+initramfs.img
+*.tar
+*.tar.gz
+*.img
+*.cpio
+
+# Ignore temporary files
+*.swp
+*.swo
+*~
+*.bak
+.DS_Store
+
+# Ignore Code-related folders
+node_modules/
+dist/
+build/
+
+# Ignore IDE/editor configs
+.vscode/
+.idea/
+
+# Ignore logs
+*.log
+
+# Ignore Python bytecode if present
+__pycache__/
+*.py[cod]
